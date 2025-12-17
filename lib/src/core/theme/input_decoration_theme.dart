@@ -15,7 +15,7 @@ class AppInputDecorationTheme {
         errorStyle: AppTextTheme.lightTextTheme.bodyLarge?.copyWith(
           color: AppColors.error,
         ),
-        hintStyle: AppTextTheme.lightTextTheme.bodyMedium,
+        hintStyle: AppTextTheme.lightTextTheme.bodySmall,
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
           borderSide: const BorderSide(color: AppColors.primary, width: 1),
