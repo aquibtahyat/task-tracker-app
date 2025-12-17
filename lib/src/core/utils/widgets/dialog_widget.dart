@@ -13,10 +13,6 @@ class ShowDialog {
   final String? message;
   final bool isDismissible;
 
-  /// [isDismissible] - Set to false to prevent dismissing by tapping outside (default: true)
-
-  /// Shows a Yes/No dialog with two action buttons
-  /// Returns true if Yes is pressed, false if No is pressed, null if dismissed
   static Future<bool?> yesNo(
     BuildContext context,
     String title, {
@@ -42,8 +38,6 @@ class ShowDialog {
     );
   }
 
-  /// Shows a confirmation dialog with OK and Cancel buttons
-  /// Returns true if OK is pressed, false if Cancel is pressed, null if dismissed
   static Future<bool?> confirmation(
     BuildContext context,
     String title, {
@@ -83,6 +77,7 @@ class ShowDialog {
           contentPadding: const EdgeInsets.all(20),
           insetPadding: const EdgeInsets.all(12),
           actionsPadding: EdgeInsets.zero,
+          title: Text(title, textAlign: TextAlign.center),
           content: _buildContent(),
           actionsAlignment: MainAxisAlignment.end,
           actions: [
@@ -125,6 +120,7 @@ class ShowDialog {
           contentPadding: const EdgeInsets.all(20),
           insetPadding: const EdgeInsets.all(12),
           actionsPadding: EdgeInsets.zero,
+          title: Text(title, textAlign: TextAlign.center),
           content: _buildContent(),
           actionsAlignment: MainAxisAlignment.end,
           actions: [
@@ -158,8 +154,10 @@ class ShowDialog {
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(title),
-        if (message != null) ...[const SizedBox(height: 12), Text(message!)],
+        if (message != null) ...[
+          const SizedBox(height: 12),
+          Text(message!, textAlign: TextAlign.start),
+        ],
       ],
     );
   }

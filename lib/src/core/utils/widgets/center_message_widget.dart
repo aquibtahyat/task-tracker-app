@@ -7,7 +7,8 @@ class CenterMessageWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox.expand(
+    return Padding(
+      padding: const EdgeInsets.all(16),
       child: Center(
         child: Text(message, style: Theme.of(context).textTheme.bodySmall),
       ),

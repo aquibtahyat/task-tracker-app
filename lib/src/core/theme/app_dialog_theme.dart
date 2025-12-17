@@ -10,7 +10,7 @@ class AppDialogTheme {
     elevation: 0,
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
     titleTextStyle: AppTextTheme.lightTextTheme.titleLarge,
-    contentTextStyle: AppTextTheme.lightTextTheme.bodySmall,
+    contentTextStyle: AppTextTheme.lightTextTheme.bodyMedium,
     alignment: Alignment.center,
     insetPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
   );

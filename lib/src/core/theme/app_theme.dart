@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:task_tracker_app/src/core/theme/app_bar_theme.dart';
 import 'package:task_tracker_app/src/core/theme/app_colors.dart';
+import 'package:task_tracker_app/src/core/theme/app_snackbar_theme.dart';
 import 'package:task_tracker_app/src/core/theme/dialog_theme.dart';
 import 'package:task_tracker_app/src/core/theme/elevated_button_theme.dart';
 import 'package:task_tracker_app/src/core/theme/floating_action_button_theme.dart';
@@ -24,5 +25,6 @@ class AppTheme {
     inputDecorationTheme: AppInputDecorationTheme.lightInputDecorationTheme,
     floatingActionButtonTheme: AppFABTheme.lightFABTheme,
     dialogTheme: AppDialogTheme.lightDialogTheme,
+    snackBarTheme: AppSnackBarTheme.lightSnackBarTheme,
   );
 }
