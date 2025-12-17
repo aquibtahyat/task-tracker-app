@@ -10,7 +10,7 @@ Dio _createBaseDio() {
     ..options.connectTimeout = const Duration(seconds: 10)
     ..options.receiveTimeout = const Duration(seconds: 20)
     ..options.headers = {
-      'Authorization': 'Bearer b36d02fe5958a2d07159b56d9346c3e9a176f953',
+      'Authorization': 'Bearer faed1db3d763f0c31cb196b7289b78bf5f5d3a21',
     };
 
   return dio;
